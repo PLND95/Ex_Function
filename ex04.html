@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    function area(radius) {
+        let result = 0;
+        result = radius * radius * Math.PI;
+        return result;
+    }
+    function chuVi(radius) {
+        let cv = 0;
+        cv = 2 * radius * Math.PI;
+        return cv;
+    }
+    let radius = +prompt ("Moi ban nhap ban kinh");
+    let dt = area(radius);
+    let cv = chuVi(radius);
+    document.write ("Dien tich hinh tron la " + dt + "<br/>"
+                     + "Chu vi hinh tron la " + cv  );
+</script>

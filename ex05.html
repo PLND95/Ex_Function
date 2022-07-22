@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    function factorial(num) {
+        let fac = 0;
+        if (num ===0) {
+            return fac = 1;
+        }else if (num < 0) {
+            return fac = 'khong hop le';
+        }else {
+            return fac = num * factorial(num -1);
+        }
+    }
+    let num = +prompt("nhap so nguyen bat ki, bat buoc la so nguyen duong");
+    let facto = factorial(num);
+    document.write('giai thừa của ' + num +'là ' + facto);
+</script>

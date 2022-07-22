@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let array = [];
+    for (let i =0; i <3; i++) {
+        array.push(Number(prompt("nhap vao mang so thu " + i)));
+    }
+    function findMin(array){
+        let min;
+        for (let i = 0; i < array.length; i++) {
+            min = array[0];
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }return min;
+    }
+    let min = findMin(array);
+    document.write("Mảng số gồm: ["+ array +"] <br/>");
+    document.write("Số nhỏ nhất trong mảng là: " + min);
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="star_1">
+    <button type="button" onclick="constellation();" >Trans</button>
+    <br>
+    <p id="result"></p>
+</body>
+</html>
+<script>
+   let star =[['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'],
+                [ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'],];
+    function constellation() {
+        let input = document.getElementById("star_1").value;
+        for (let i= 0; i < star[0].length; i++) {
+            if (input == star[0][i]) {
+                document.getElementById("result").innerHTML = star[1][i];
+            }
+        }
+    }
+
+</script>
